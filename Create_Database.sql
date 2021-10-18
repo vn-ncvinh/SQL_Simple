@@ -61,8 +61,8 @@ Luong int)
 go
 
 create table CHUNGNHAN(
-MaNV int references NHANVIEN(MaNV),
-MaMB int references MAYBAY(MaMB),
+MaNV int FOREIGN KEY references NHANVIEN(MaNV),
+MaMB int FOREIGN KEY references MAYBAY(MaMB),
 constraint pk primary key (MaNV, MaMB))
 go
 
